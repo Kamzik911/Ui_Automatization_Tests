@@ -22,7 +22,7 @@ public class CZC_ASUS_NTB_Find {
 	Thread.sleep(2000);
 	driver.findElement(By.xpath("//*[@id=\"product-list-container\"]/div[4]/a[2]/h3")).click();
 	
-	//driver.close();
+	driver.close();
 	
 	}
 }
