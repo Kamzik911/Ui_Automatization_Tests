@@ -26,8 +26,9 @@ public class MultiSwitchWindows {
 		driver.get("https://www.google.com");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//*[@id=\"W0wltc\"]")).click();
-		driver.findElement(By.name("q")).sendKeys("beruška");
-		driver.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[4]/center/input[1]")).click();
+		WebElement searchBox = driver.findElement(By.name("q"));
+		searchBox.sendKeys("beruška");
+		//driver.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[4]/center/input[1]")).click();
 		driver.findElement(By.xpath("//*[@id=\"rso\"]/div[2]/div/div/div/div[1]/div/div/div[1]/div/a/h3")).click();
 		driver.switchTo().newWindow(WindowType.TAB);
 		driver.get("https://www.google.com");
